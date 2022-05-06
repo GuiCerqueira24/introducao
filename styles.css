@@ -56,7 +56,7 @@ button:hover{
     background: #71e5edb7;
 }
 
-@media only screen and (max-width:720px){
+@media only screen and (max-width:900px){
     .intro{
         flex-direction: column;
         text-align: center;
