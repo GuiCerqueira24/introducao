@@ -55,3 +55,17 @@ button:hover{
     transform: scale(1.02);
     background: #71e5edb7;
 }
+
+@media only screen and (max-width:900px){
+    .intro{
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .intro-half{
+        width:100vw;
+        height:60%;
+    }
+    
+}
