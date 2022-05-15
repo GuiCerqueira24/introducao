@@ -3,14 +3,14 @@
     padding:0px;
     box-sizing:border-box;
     font-family:'Poppins', sans-serif;
-    color:white;
+    color:#18100D;
 }
 
 .intro{
     width:100vw;
     height:100vh;
     display: flex;
-    background: #03152D;
+    background: #DFE7F2;
 }
 
 .intro-half{
@@ -20,12 +20,13 @@
 
 .img{
     width:100%; height:100%;
-    background: url('./dna-genes.jpg');
+    background: url('pcrImg.jpg');
     background-size: cover;
+    background-position-x: -300px;
 }
 
 .text{
-    margin:10%;
+    margin:5% 10%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,7 +44,7 @@
 button{
     width:50%;
     color: #03152D;
-    background: #71E4ED;
+    background: #62e5ff;
     padding:1.125rem;
     border-radius: 10px;
     font-weight:700;
@@ -53,7 +54,15 @@ button{
 button:hover{
     cursor:pointer;
     transform: scale(1.02);
-    background: #71e5edb7;
+    background: #90fffdac;
+}
+
+.logo{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:150px;
+    object-fit: contain;
 }
 
 @media only screen and (max-width:900px){
@@ -61,11 +70,28 @@ button:hover{
         flex-direction: column;
         text-align: center;
         overflow: hidden;
+        height: unset;
     }
     
     .intro-half{
         width:100vw;
         height:60%;
     }
+
+    .intro h1{
+        font-size: 1.75rem;
+    }
+
+    .intro p{
+        font-size:1rem;
+    }
+
+    button{
+        width: 80vw;
+    }
     
+    .logo{
+        position: unset;
+        align-self: center;
+    }
 }
